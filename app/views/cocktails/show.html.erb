@@ -1,1 +1,15 @@
-show.html.erb
+<div class="buttonss">
+    <%= link_to 'Back', cocktails_path, class: "btn" %> 
+</div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.pexels.com/photos/316891/pexels-photo-316891.jpeg?cs=srgb&dl=erfrischung-getrank-glas-glasgeschirr-316891.jpg&fm=jpg);">
+  <h1><%=@cocktail.name%></h1>
+</div>
+
+<div class="cardss">
+	<ul>
+	<% @cocktail.doses.each do |dose| %>
+		<li class="text-align-center"><%= dose.description %> of	<%= dose.ingredient.name %></li>
+	<% end %>
+	</ul>
+</div>
+<p><%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn" %> <%= link_to "Delete Cocktail", cocktails_path, class: "btn" %> </p>

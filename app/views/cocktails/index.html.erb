@@ -1,1 +1,28 @@
-<h1> Hello</h1>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+</head> 
+<body>
+  
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.pexels.com/photos/316891/pexels-photo-316891.jpeg?cs=srgb&dl=erfrischung-getrank-glas-glasgeschirr-316891.jpg&fm=jpg);">
+    <h2>Mister Cocktail</h2>
+    <br>
+    <h1>The best Cocktails ever!</h1>
+    <%= link_to "Add one" , new_cocktail_path, class: "btn"%>
+  </div>
+  <div class="container">
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card-category p-relativee" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <%= link_to "", cocktail_path(cocktail), class:"absoluto-0-0" %>
+        <p><%= cocktail.name %></p>
+      </div>
+      <% end %>
+    </div> 
+  </div>
+  <div class="footer">
+    <div class="footer-copyright">
+      <p>This website is made with <i class="fas fa-heart"></i> at Le Wagon Berlin</p>
+    </div>
+  </div>
+
+</body>

@@ -11,3 +11,200 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+$background: #caf2d7;
+$button: #83b582;
+$hover: #ba6b57;
+$none: none;
+$black: black;
+
+body {
+	background-color: #FCFFFD ;
+}
+
+.card {
+	padding: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.cardss {
+	width: 450px;
+	padding: 60px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 450px;
+  color: $button;
+}
+
+.p-relativee {
+	position: relative;
+}
+
+.absoluto-0-0 {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.buttonss {
+	position: absolute;	
+	top: 20px;
+	left: 20px;
+}
+
+.btn {
+	background: $button;
+	color: $white;
+	margin-top: 10px;
+}
+
+
+h1, h2, p, li {
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	color: $button;
+	text-decoration: none;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  margin-bottom: 30px;
+}
+.banner .btn {
+	position: absolute;
+	left: 630px;
+	top: 200px;
+}
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 25px;
+	position: absolute;
+	top: 150px;
+	left: 500px;
+}
+
+.banner h2{
+	font-family: 'Lacquer',;
+	font-size: 60px;
+	position: absolute;
+	top: 60px;
+	left: 500px;
+}
+
+.banner .btn {
+  margin-left: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding-left: 25px;
+}
+
+.footer {
+  background: $button;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0px 50px;
+  margin-top: 30px;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards p{
+	color: white;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

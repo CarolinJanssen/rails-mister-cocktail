@@ -1,15 +1,22 @@
-<h1>New Cocktail:</h1>
-<br>
+<div class="buttonss">
+    <%= link_to 'Back', cocktails_path, class: "btn" %> 
+</div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.pexels.com/photos/1441122/pexels-photo-1441122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+  <h1 >Your New Cocktail:</h1>
+</div>
+<div class="container">
+  <div class="header">
+    <br>
+  </div>
+  <div class="card">
+    <div class="text-align-center">
+      <%= simple_form_for [@cocktail] do |f| %>
+      <%= f.input :name %>
+      <br>
+      <%= f.submit "Add a Cocktail", class: "btn" %> 
+        <% end %>
+      </div>
+  </div>
+</div>
 
-<%= simple_form_for [@cocktails] do |f| %>
-<%= f.input :name %>
-<%= f.input :doses %>
 
-<br>
-<br>
-
-<%= f.submit "Add a Cocktail", class: "btn btn-primary" %>
-<% end %>
-<br>
-
-<%= link_to 'Back', cocktails_path %>
